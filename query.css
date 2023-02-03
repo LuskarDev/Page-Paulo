@@ -1,0 +1,267 @@
+@media (max-width: 1245px) {
+    #Testimonials ul {
+        padding-left: 10rem;
+    }
+}
+
+@media (max-width: 1033px) {
+    section {
+        height: 100%;
+    }
+
+    #Home main .logo img {
+        margin-top: 3rem;
+    }
+
+    #services .content-main .info-jb {
+        width: 80%;
+        margin: 0!important;
+    }
+
+    #Home,
+    #About,
+    #Contact,
+    #faQ,
+    #services {
+        height: 100%;
+    }
+
+    #services {
+        padding-top: 4rem;
+    }
+
+    #Home main {
+        padding: 0;
+        padding-top: 4rem;
+    }
+
+    #services .title-inf {
+        margin-bottom: 2rem;
+    }
+
+    header .menu {
+        z-index: 1;
+        display: block;
+    }
+
+    header button {
+        padding: 10px 20px;
+    }
+    
+
+    header .menu-mobile.show {
+        transform: translateX(0px);
+        transition: transform 1s ease;
+        opacity: 1;
+    }
+
+    header .menu-mobile ul {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        font-family: var(--Mont);
+        font-weight: 700;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    header .menu-mobile ul li {
+        width: 100%;
+        border-left: 0;
+        padding: 10px;
+    }
+
+    header .menu-mobile ul li:first-child{
+        border-top: 0px;
+    }
+
+    header .menu-mobile ul li.active{
+        border-right: 5px solid white;
+    }
+
+    header .menu-mobile ul li a{
+        font-size: 1rem;
+    }
+    
+
+    header nav ul {
+        display: none;
+    }
+
+  
+}
+
+@media (max-width: 924px) {
+    #Contact .form {
+        margin-left: 1rem;
+    }  
+
+    #Contact .content-contact {
+        margin-left: 1rem;
+    }
+
+    #Testimonials aside {
+        padding-left: 20rem;
+    }
+}
+
+@media (max-width: 947px) {
+    #Testimonials aside {
+        padding-left: 7rem;
+    }
+
+    #Testimonials ul li .bxt .descri {
+        width: 220px;
+    }
+}
+
+
+@media (max-width: 862px) {
+    #Contact .content-contact .text {
+        text-align: center;
+    }
+
+    #faQ {
+        flex-direction: column;
+    }
+    #faQ .content-faq {
+        flex-direction: column;
+    }
+
+    #faQ .thunder {
+        margin: 6rem 0;
+    }
+
+    #Testimonials aside {
+        padding-left: 1rem;
+    }
+}
+
+
+@media (max-width: 620px){
+
+    #Home {
+        height: 100%;
+    }
+
+    #Home main {
+        padding: 0;
+        padding-top: 4rem;
+    }
+
+    #Home main .description p {
+        padding: 1rem;
+    }
+
+   
+
+    #About .content-about aside .info-descri {
+        text-align: center;
+        margin: 0!important;
+    }
+
+    #services .content-main .img-view .img-pr figure img {
+        box-shadow: 5px 10px 10px 0px rgba(56, 54, 54, 0.658);
+    }
+
+    #Testimonials aside {
+        padding-left: 10rem;
+    }
+}
+
+@media (max-width: 534px) {
+    #services .content-main .info-jb ul {
+        grid-template-columns: 1fr;
+    }
+
+    #About .content-about aside .info-descri {
+        width: 95%;
+    }
+
+    #Contact .form {
+        box-shadow: none;
+        width: 100%;
+        border-radius: 0;
+        margin-left: 0;
+    }
+
+    #Contact .form form {
+        padding: 15px;
+        color: white;
+    }
+    
+    #Contact .form .adress-put {
+        flex-wrap: wrap;
+    }
+
+    #faQ .faqs ul li {
+        width: 100%;
+        margin: 0!important;
+    }
+
+    #faQ .faqs ul li .title {
+        width: 100%;
+    }
+
+    #faQ .faqs ul li .title h3{ 
+        font-size: .7rem;
+        width: 80%;
+    }
+
+    #Testimonials aside {
+        padding-left: 10rem;
+    }
+}
+
+@media (max-width: 427px) {
+
+    #Testimonials ul li .bxt .descri {
+        width: 220px;
+    }
+    #faQ .faqs{
+        width: 100%;
+    }
+    #faQ .faqs ul {
+        padding: 0 20px;
+    }
+
+    #faQ .title {
+        font-size: 1rem;
+    }
+
+    #faQ .content-faq {
+    justify-content: center;
+    }
+
+    #Contact .content-contact .whatsapp,
+    #Contact .content-contact .gmail {
+        margin: 0;
+    }
+
+    #Contact .content-contact .pin {
+        margin-left: 0;
+    }
+
+#Contact .form .adress-put .cep,
+    #Contact .form .adress-put .add {
+        width: 100%!important;
+    }
+
+#services .title-inf {
+    font-size: .7rem;
+}
+
+    #services .content-main .img-view .img-pr figure img {
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 372px) {
+    #Testimonials ul li .bxt .descri {
+        width: 220px;
+    }
+} 
