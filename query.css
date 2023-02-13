@@ -1,9 +1,3 @@
-@media (max-width: 1245px) {
-    #Testimonials ul {
-        padding-left: 10rem;
-    }
-}
-
 @media (max-width: 1033px) {
     section {
         height: 100%;
@@ -84,12 +78,15 @@
         font-size: 1rem;
     }
     
-
     header nav ul {
         display: none;
     }
 
-  
+    #Testimonials ul li .bxt .descri {
+        width: 250px;
+        height: 80px;
+    }
+
 }
 
 @media (max-width: 924px) {
@@ -101,18 +98,13 @@
         margin-left: 1rem;
     }
 
-    #Testimonials aside {
-        padding-left: 20rem;
-    }
 }
 
 @media (max-width: 947px) {
-    #Testimonials aside {
-        padding-left: 7rem;
-    }
 
     #Testimonials ul li .bxt .descri {
         width: 220px;
+        height: 80px;
     }
 }
 
@@ -133,13 +125,15 @@
         margin: 6rem 0;
     }
 
-    #Testimonials aside {
-        padding-left: 1rem;
-    }
+
 }
 
 
 @media (max-width: 620px){
+
+    #Home main .description {
+        width: 85%;
+    }
 
     #Home {
         height: 100%;
@@ -154,8 +148,6 @@
         padding: 1rem;
     }
 
-   
-
     #About .content-about aside .info-descri {
         text-align: center;
         margin: 0!important;
@@ -165,9 +157,6 @@
         box-shadow: 5px 10px 10px 0px rgba(56, 54, 54, 0.658);
     }
 
-    #Testimonials aside {
-        padding-left: 10rem;
-    }
 }
 
 @media (max-width: 534px) {
@@ -209,12 +198,15 @@
         width: 80%;
     }
 
-    #Testimonials aside {
-        padding-left: 10rem;
+    header button {
+        display: none;
     }
+
 }
 
 @media (max-width: 427px) {
+
+  
 
     #Testimonials ul li .bxt .descri {
         width: 220px;
@@ -261,7 +253,17 @@
 }
 
 @media (max-width: 372px) {
+   
+#Testimonials ul li {
+    margin: 0 65px;
+}
+
+
     #Testimonials ul li .bxt .descri {
         width: 220px;
+    }
+
+    #Home main .logo img {
+        margin-top: 1rem!important;
     }
 } 
