@@ -12,8 +12,6 @@ function CheckInput() {
     let EmailValue = Email.value.trim();
     let Adress = document.querySelector("#adress");
     let AdressValue = Adress.value.trim();
-    let cep = document.querySelector("#cep");
-    let cepValue = cep.value.trim();
     let Phone = document.querySelector("#phone");
     let PhoneValue = Phone.value.trim();
     let assunto = document.querySelector("#assunto");
@@ -43,12 +41,6 @@ function CheckInput() {
         Validation(Adress)
     }
 
-    if(cepValue === "") {
-        ErrorValidation(cep, "Preencha o Campo")
-    } else {
-        Validation(cep)
-    }
-
     if(AssuntoValue === "") {
         ErrorValidation(assunto, "Preencha o Campo")
     } else {
@@ -65,7 +57,6 @@ function ErrorValidation(input,message) {
     small.style.opacity = 1;
     control.className = "border-put error";
 }
-
 
 function Validation(input) {
     const control = input.parentElement;
@@ -104,3 +95,47 @@ function InteractionMenu(){
 }
 
 InteractionMenu()
+
+ShowComent(Cometary) 
+
+function ShowComent(data) {
+    let wrapper = document.querySelector(".swiper-wrapper");    
+
+    data.forEach(e => { 
+
+        let li = ` <li class="swiper-slide">
+        <div class="bxt">
+            <div class="tpx">
+                <div class="img">
+                    <figure>
+                        <img src="${e.img}" alt="">
+                    </figure>
+                </div>
+                <div class="ifn">
+                    <div class="name">
+                        <h2>${e.nome}</h2>
+                    </div>
+                    <div class="city">
+                        <p>${e.city}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="descri">
+                <p>${e.coment}</p>
+            </div>
+            <div class="rks">
+                <ul class="stars">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+    </li>`
+
+    wrapper.innerHTML += li;
+  
+    })
+}
