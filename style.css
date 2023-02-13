@@ -93,7 +93,7 @@ header .menu-mobile {
     background-color: var(--Dark-blue);
     transition: transform 1s ease;
     transform: translateX(-400px);
-    border-radius: 0px 0px 0px 10px;
+    border-radius: 0px 0px 10px 10px;
     z-index: -0;
     box-shadow: 10px 20px 20px 0px rgba(0, 0, 0, 0.507) ;
 }
@@ -175,7 +175,7 @@ header button a {
 
 #Home main .logo img {
     width: 120px;
-    margin-top: 12rem;
+    margin-top: 11rem;
 }
 
 #Home main::after {
@@ -238,6 +238,7 @@ header button a {
 }
 
 #Home main .description {
+    width: 700px;
     font-family: var(--Mont);
 }
 
@@ -249,9 +250,8 @@ header button a {
 }
 
 #Home main .description p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 1.4rem;
-
 }
 
 #Home main button {
@@ -379,7 +379,8 @@ header button a {
 }
 
 #About .content-about aside .img-prf figure img {
-    width: 200px;
+    width: 230px;
+    height: 310px;
     border-radius: 10px;
 }
 
@@ -442,6 +443,7 @@ header button a {
 #faQ .title {
     color: white;
     background-color: var(--yellow);
+    box-shadow: 10px 5px 0px 0px white;
     padding: 5px 10px;
     font-size: 1.5rem;
     font-family: "Roboto";
@@ -515,10 +517,12 @@ header button a {
 }
 
 #faQ .faqs ul li .title {
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: left;
     background-color: var(--Light-blue);
+    box-shadow: none;
     align-items: center;
     justify-content: space-between;
     margin: 10px 0;
@@ -527,8 +531,8 @@ header button a {
 
 
 #faQ .faqs ul li .title h3{ 
-    font-size: 1rem;
-    font-family: var(--Mont);
+    font-size: .9rem;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -542,8 +546,10 @@ header button a {
 }
 
 #faQ .faqs ul li .title .desc p {
-    font-size: 1rem;
+    font-size: .8rem;
     padding: 0px 10px;
+    padding-left: 5px;
+    padding-top: 5px;
     font-weight: 300!important;
 }
 
@@ -554,25 +560,35 @@ header button a {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    position: relative;
 }
 
 #faQ .faqs ul li .title .btn label {
     cursor: pointer;
 }
 
-#faQ .faqs ul li .title input[type="checkbox"] {
-     all: unset;
+#faQ .faqs ul li .title input {
+     width: 500px;
+     border: none;
+     height: 80px;
+     opacity: 0;
+     cursor: pointer;
+     top: 0;
+     position: absolute;
 }
 
 #faQ .faqs ul li .title input[type=checkbox]:checked ~ .desc {
     height: 25px;
-    overflow: auto;
     transition: height .25s ease;
 }
 
 #faQ .faqs ul li:nth-child(2) .title input[type=checkbox]:checked ~ .desc {
     height: 80px;
-    overflow: auto;
+    transition: height .25s ease;
+}
+
+#faQ .faqs ul li:nth-child(3) .title input[type=checkbox]:checked ~ .desc {
+    height: 60px;
     transition: height .25s ease;
 }
 
@@ -584,22 +600,10 @@ header button a {
     color: white;
 }
 
-
-#faQ .faqs ul li:nth-child(3) .title input[type=checkbox]:checked ~ .desc {
-    height: 65px;
-    overflow: auto;
-    transition: height .25s ease;
-  }
-
-
 #faQ .faqs ul li .title .btn i {
     color: white;
 }
 
-#faQ .faqs ul li .title .btn i:hover {
-    rotate: 180deg;
-    transition: rotate .35s ease;
-}
 
 /* Services Section */
 
@@ -629,6 +633,7 @@ header button a {
     font-weight: 700;
     letter-spacing: 5px;
     box-shadow: 5px 5px 0px white;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -650,7 +655,7 @@ header button a {
     width: 400px;
     height: 300px;
     border-radius: 10px;
-    box-shadow: -10px -10px 0px 0px var(--yellow);
+    box-shadow: -10px 10px 0px 0px var(--yellow);
 }
 
 #services .content-main .info-jb {
@@ -703,9 +708,9 @@ header button a {
 }
 
 #services .content-main .info-jb ul li .descri h3{
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-size: .8rem;
-    font-family: var(--Bak);
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: .5rem;
@@ -770,15 +775,22 @@ header button a {
     justify-content: center;
 }
 
-.swiper {
-    padding-left: 4rem ;
+#Testimonials .content-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100%;
+    margin: 0 30px;
+    margin-top: 2rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 350px!important;
   }
 
   .swiper-slide {
-    font-size: 18px;
-
+    height: 250px;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -803,6 +815,8 @@ header button a {
 
 #Testimonials .title {
     background-color: var(--yellow);
+    box-shadow: 10px 5px 0px 0px white;
+
     color: white;
     font-family: "Roboto";
     letter-spacing: 2px;
@@ -811,7 +825,7 @@ header button a {
 }
 
 #Testimonials aside {
-    width: 100%;
+    width: 90%;
     color: white;
     font-family: var(--Mont);
 }
@@ -821,7 +835,7 @@ header button a {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0;
 }
 
@@ -829,18 +843,14 @@ header button a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 20px;
     border-radius: 10px;
     color: black; 
 }
 
 #Testimonials ul li .bxt .tpx {
     display: flex;
-    width: 100%;
-    padding: 5px;
     border-radius: 10px;
     align-items: center;
-    justify-content: flex-start;
 }
 
 #Testimonials ul li .bxt .tpx .ifn {
@@ -866,11 +876,12 @@ header button a {
 
 #Testimonials ul li .bxt .descri {
     margin-top: 10px;
-    padding: 5px;
+    padding: 7px;
     font-size: .8rem;
     width: 300px;
     height: 100%;
     color: white;
+    border-radius: 10px;
     background-color: var(--Light-blue);
     position: relative;
 }
@@ -881,7 +892,7 @@ header button a {
     width: 10px;
     height: 10px;
     top: -5px;
-    left: 35px;
+    left: 30px;
     rotate: 45deg;
     background-color: var(--Light-blue);
 }
@@ -891,13 +902,13 @@ header button a {
     width: 70px;
     height: 70px;
     background-size: cover;
+    border: 5px solid var(--Light-blue);
 }
 
 #Testimonials ul li .bxt .rks .stars{
+    width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0px;
+    align-items: center;
 }
 
 #Testimonials ul li .bxt .rks ul li {
@@ -906,15 +917,8 @@ header button a {
 
 #Testimonials ul li .bxt .rks ul li i {
     font-size: 1.2rem;
-    color: var(--Dark-blue);
-}
-
-#Testimonials ul li .bxt .rks ul li i:hover {
     color: var(--yellow);
-    transition: color .25s ease;
-    cursor: pointer;
 }
-
 
 /* final testimonails */
 
@@ -1170,6 +1174,7 @@ header button a {
 
 #Contact .form small {
     opacity: 0;
+    color: rgb(180, 6, 15);
 }
 
 #Contact .form .adress-put {
@@ -1180,9 +1185,20 @@ header button a {
 
 #Contact .form  .border-put
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 5px;
     background-color: rgb(250, 244, 244);
     border-radius: 10px;
+}
+
+#Contact .form .assunto .border-put {
+    display: block;
+}
+
+#Contact .form  .border-put i {
+    color: var(--Dark-blue);
 }
 
 @keyframes Shake {
@@ -1231,6 +1247,7 @@ header button a {
 #Contact .form .assunto textarea,
 #Contact .form .adress-put input
  {
+    
     width: 100%;
    outline: none;
    border: none;
