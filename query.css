@@ -201,9 +201,28 @@
         width: 80%;
     }
 
+    #faQ{
+        padding-bottom: 3rem;
+    }
+
 }
 
 @media (max-width: 427px) {
+    #Home main {
+        padding: 0;
+    }
+
+    #About .content-about aside .img-prf figure img {
+        width: 170px;
+        height: 210px;
+        border-radius: 10px;
+    }
+    
+
+    #About .content-about .title {
+        margin-bottom: 2rem;
+    }
+
     #Testimonials ul li .bxt .descri {
         width: 220px;
     }
