@@ -139,3 +139,29 @@ function ShowComent(data) {
   
     })
 }
+
+const ShowServices = (e) => {
+    let ul = document.querySelector(".info-jb ul");
+
+    e.forEach(service => {
+        let li = `
+            <li>
+                <div class="title-srv">
+                    <figure>
+                        <img src="${service.img}" alt="${service.title}">
+                    </figure>
+                    <h3>${service.title}</h3>
+                </div>
+                <div class="descri">
+                    <p>${service.desc}</p>
+                </div>
+            </li>
+        `
+
+        ul.innerHTML += li;
+    })
+
+
+}
+
+ShowServices(service);
