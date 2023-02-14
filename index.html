@@ -29,9 +29,7 @@
     <header> 
         
         <nav>
-            <div  class="menu" onclick="ShowMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+           
             <div class="menu-mobile">
                 <ul>
                     <li><a href="#Home">Inicio</a></li>
@@ -42,8 +40,8 @@
                     <li><a href="#Contact">Contatos</a></li>
                 </ul>
             </div>
-            <div class="logo">
-                <img src="img/icon/logo-rec.png" alt="">
+            <div class="logo-nav">
+                <img src="img/icon/logoPauloW.png" alt="">
             </div>
         <ul>
             <li><a href="#Home">Inicio</a></li>
@@ -54,14 +52,16 @@
             <li><a href="#Contact">Contatos</a></li>
         </ul>
         <button><a href="#Contact">Entrar em contato</a></button>
-
+        <div  class="menu" onclick="ShowMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
         </nav>
     </header>
     
     <section id="Home">
         <main >
             <div class="logo">
-                <img src="img/icon/logo.png" alt="logo">
+                <img src="img/icon/logoPaulo.png" alt="logo">
             </div>
             <h1 class="h1">Paulo Cunha</h1>
             <div class="formas">
@@ -212,7 +212,7 @@
             <div class="img-view">
                 <div class="img-pr">
                     <figure>
-                        <img src="img/instalacoes-eletricas-eficiencia-energetica-soma-energia.jpg" alt="">
+                        <img src="img/bg.png" alt="">
                     </figure>
                 </div>
                 
@@ -220,42 +220,7 @@
 
             <div class="info-jb">
                 <ul>
-                    <li class="iten1">
-                        <figure>
-                            <img src="img/repair.png" alt="repair">
-                        </figure>
-                        <div class="descri">
-                            <h3>Reparos Eletricos</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis accusantium non consequatur officiis obcaecati.</p>
-                        </div>
-                    </li>
-                    <li class="iten2">
-                        <figure>
-                            <img src="img/casa.png" alt="house">
-                        </figure>
-                        <div class="descri">
-                            <h3>Instalação Eletrica</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iure minima quisquam consectetur iste. Voluptas.</p>
-                        </div>
-                    </li>
-                    <li class="iten3">
-                        <figure>
-                            <img src="img/people.png" alt="people">
-                        </figure>
-                        <div class="descri">
-                            <h3>Avaliação de Segurança Elétrica</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quos aut, veritatis architecto velit neque.</p>
-                        </div>
-                    </li>
-                    <li class="iten4">
-                        <figure>
-                            <img src="img/switch.png " alt="switch">
-                        </figure>
-                        <div class="descri">
-                            <h3>Atualização do Quadro de Distribuição</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsam omnis asperiores dolores eius deleniti!</p>
-                        </div>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -397,6 +362,7 @@
         250: {
       slidesPerView: 1,
       slidesPerGroup: 1,
+      centerSlide: 'true',
     },
     650: {
       slidesPerView: 2,
