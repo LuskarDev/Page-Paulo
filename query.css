@@ -32,6 +32,11 @@
     #services .title-inf {
         margin-bottom: 2rem;
     }
+    
+    header button {
+        display: none;
+    }
+
 
     header .menu {
         z-index: 1;
@@ -40,11 +45,10 @@
 
     header button {
         padding: 10px 20px;
-    }
-    
+    }  
 
     header .menu-mobile.show {
-        transform: translateX(0px);
+        transform: translateX(-0px);
         transition: transform 1s ease;
         opacity: 1;
     }
@@ -101,7 +105,6 @@
 }
 
 @media (max-width: 947px) {
-
     #Testimonials ul li .bxt .descri {
         width: 220px;
         height: 80px;
@@ -198,19 +201,13 @@
         width: 80%;
     }
 
-    header button {
-        display: none;
-    }
-
 }
 
 @media (max-width: 427px) {
-
-  
-
     #Testimonials ul li .bxt .descri {
         width: 220px;
     }
+
     #faQ .faqs{
         width: 100%;
     }
@@ -255,14 +252,11 @@
 @media (max-width: 372px) {
    
 #Testimonials ul li {
-    margin: 0 65px;
+    margin: 0px;
 }
-
-
-    #Testimonials ul li .bxt .descri {
-        width: 220px;
-    }
-
+#Testimonials aside {
+    width: 90%;
+}
     #Home main .logo img {
         margin-top: 1rem!important;
     }
