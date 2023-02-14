@@ -840,13 +840,17 @@ header button a {
     margin: 0;
 }
 
+#Testimonials ul li {
+    margin-left: .2rem;
+}
+
 #Testimonials ul li .bxt{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 10px;
-    color: black;  height: 100%;
-    width: 100%;
+    color: black;
+    height: 135px;
 }
 
 #Testimonials ul li .bxt .tpx {
@@ -862,7 +866,7 @@ header button a {
 #Testimonials ul li .bxt .tpx .name {
     text-transform: uppercase;
     border-bottom: 2px solid var(--Dark-blue);
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 #Testimonials ul li .bxt .tpx .name h2 {
@@ -879,6 +883,7 @@ header button a {
 #Testimonials ul li .bxt .descri {
     margin-top: 10px;
     padding: 7px;
+    padding-top: 2px;
     font-size: .8rem;
     width: 300px;
     color: white;
