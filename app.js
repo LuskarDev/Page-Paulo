@@ -69,10 +69,15 @@ function Validation(input) {
 
 function ShowMenu(){
     let menu = document.querySelector("header .menu-mobile");
+    let iconMenu = document.querySelectorAll(".menu i");
     if(menu.classList.contains("show")){
-        menu.classList.remove("show")
+        menu.classList.remove("show");
+        iconMenu[1].classList.remove('show');
+        iconMenu[0].style.opacity = 1;
     }else {
         menu.classList.add("show");
+        iconMenu[0].style.opacity = 0;
+        iconMenu[1].classList.add('show');
     }
 }
 
