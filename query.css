@@ -150,6 +150,10 @@
         width: 85%;
     }
 
+    body .loader-bx .loading-ctt .letters .lt-first h2 {
+        font-size: 2rem;
+    }    
+
     #Home {
         height: 100%;
     }
