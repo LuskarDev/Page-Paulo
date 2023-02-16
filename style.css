@@ -43,6 +43,105 @@ button:hover{
     box-shadow: 0px 0px 10px 0px  var(--Light-blue);
 }
 
+body {
+    position: relative;
+}
+
+body .loader-bx {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 12;
+}
+
+body .loader-bx .loading-ctt {
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
+
+body .loader-bx .loading-ctt .letters {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0 auto;
+}
+
+@keyframes anim {
+    0% {
+     background-color: black;
+    }
+    20% {
+        background-color: rgb(73, 72, 72);
+    }
+    50% {
+     background-color: rgb(112, 110, 110);
+
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+body .loader-bx .loading-ctt .letters .lt-first {
+    background-color: black;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body .loader-bx .loading-ctt .letters .lt-first:first-child {
+    animation: anim 1.5s ease-in-out;
+}
+
+body .loader-bx .loading-ctt .letters .lt-first:nth-child(2) {
+    animation: anim 2s ease-in-out;
+}
+
+body .loader-bx .loading-ctt .letters .lt-first:nth-child(3) {
+    animation-delay: 800ms;
+    animation: anim 2.5s ease-in-out ;
+}
+
+body .loader-bx .loading-ctt .letters .lt-first:nth-child(4) {
+    animation-delay: 800ms;
+    animation: anim 3s ease-in-out;
+}
+
+body .loader-bx .loading-ctt .letters .lt-first:nth-child(5) {
+    animation-delay: 800ms;
+    animation: anim 3.5s ease-in-out;
+}
+
+body .loader-bx .loading-ctt .letters .lt-first:nth-child(6) {
+    animation-delay: 800ms;
+    animation: anim 4s ease-in-out;
+}
+
+body .loader-bx .loading-ctt .letters .lt-first:nth-child(7) {
+    animation-delay: 800ms;
+    animation: anim 4.5s ease-in-out;
+}
+
+body .loader-bx .loading-ctt .letters .lt-first:nth-child(8) {
+    animation-delay: 800ms;
+    animation: anim 5s ease-in-out;
+}
+
+body .loader-bx .loading-ctt .letters .lt-first:last-child {
+    animation: anim 5.5s ease-in-out;
+}
+
+body .loader-bx .loading-ctt .letters .lt-first h2 {
+    font-size: 4rem;
+}
+
+
 img { width: 50px}
 
 /* Arrow top */
