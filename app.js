@@ -86,7 +86,7 @@ window.addEventListener("load", () => {
 
     setInterval(() => {
         loading.style.display = "none"
-    }, 6000)
+    }, 5700)
 })
 
 function InteractionMenu(){
