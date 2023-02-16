@@ -81,6 +81,14 @@ function ShowMenu(){
     }
 }
 
+window.addEventListener("load", () => {
+    let loading = document.querySelector(".loader-bx");
+
+    setInterval(() => {
+        loading.style.display = "none"
+    }, 6000)
+})
+
 function InteractionMenu(){
     let options = document.querySelectorAll("header nav .menu-mobile ul li");
     let menu = document.querySelector("header .menu-mobile");
